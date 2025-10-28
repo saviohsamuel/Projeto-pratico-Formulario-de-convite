@@ -1,0 +1,23 @@
+form {
+    width: 35rem;
+    margin-inline: auto;
+    
+}
+fieldset {
+    margin-bottom: 3rem;
+    border: none;
+}
+legend {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    font: var(--heading-sm);
+    color: var(--text-heading);
+    margin-bottom: 1.5rem;
+    svg {
+        width: 1.5rem;
+    }
+    path {
+        fill: var(--input-placeholder);
+    }
+}

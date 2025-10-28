@@ -1,0 +1,90 @@
+.input-wrapper {
+    display: grid;
+    gap: .75rem;
+    margin-bottom: 1rem;    
+}
+label, span {
+    font: var(--text-sm);        
+}
+input, .toggle {
+    width: 100%;
+    padding: .8125rem 1rem;
+    border-radius: .5rem;
+    background: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    outline: none;
+    &:focus,
+    &:focus-within {
+        border-color: var(--brand-light);
+    }
+    &[placeholder] {
+        color: var( --text-heading);
+    }
+    &[type="radio"] {        
+        display: none;
+    }
+    &[type="radio"]:checked + label {
+      background: #3a3a3a;
+      color: var(--text-heading);
+      font: var(--text-sm);
+    }    
+}
+.container-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);        
+    gap: 1rem;
+}
+.radios {
+    display: flex;
+    justify-content: space-between;
+}
+.radio-wrapper {
+    display: flex;
+    align-items: center;        
+    padding: 10.5px 18px;
+    img {
+        width: 1rem;
+    }
+    &:has(:checked) {
+        background: var(--shape-button);
+    }
+}
+.type-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.toggle {
+    display: flex;
+    padding: .20rem;      
+    margin-top: .3rem;
+}
+.type-option {    
+    flex: 1;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    border-radius: inherit;      
+    & svg {
+      width: 16px;
+      height: 16px;
+    }
+}
+input#presencial:checked + label svg path {
+    stroke: var(--brand-light);
+}
+input#online:checked + label svg path {
+    stroke: var(--brand-light);
+}
+.textarea {
+    label {
+        display: inline-block;
+        margin-bottom: .75rem;
+    }
+    & input {
+        padding-bottom: 98px;
+    }
+}

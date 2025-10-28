@@ -39,3 +39,47 @@
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
 }
+body {
+    background-color: var(--shape-body);
+    color: var(--text-body);
+    font: var(--text-md);   
+    overflow: hidden;     
+}
+#app {
+    display: grid;
+    grid-template-columns: 27.5rem 52.5rem;    
+    overflow: hidden;            
+    height: 100vh;
+    width: 1280px;    
+}
+aside {    
+    background: url('../assets/imgs/background.png') no-repeat;
+    background-size: cover;           
+    background-position: center;    
+    padding: 2rem;
+}
+main {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;        
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+h2 {
+    font: var(--heading-md);
+    margin-bottom: 2.5rem;
+}
+.title {        
+    img { 
+        width: 2.865625rem;            
+    }
+    h1 {
+        font: var(--f-f-logo);
+        color: var(--pink);
+        margin-block: 1rem .25rem;
+    }
+    p {            
+        font-weight: 100;
+    }
+}
