@@ -47,10 +47,10 @@ body {
 }
 #app {
     display: grid;
-    grid-template-columns: 27.5rem 52.5rem;    
+    grid-template-columns: 30% 70%;    
     overflow: hidden;            
     height: 100vh;
-    width: 1280px;    
+    width: 100%;    
 }
 aside {    
     background: url('../assets/imgs/background.png') no-repeat;

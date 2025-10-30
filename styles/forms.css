@@ -1,7 +1,7 @@
 form {
     width: 35rem;
     margin-inline: auto;
-    
+    padding-block: 80px;
 }
 fieldset {
     margin-bottom: 3rem;
