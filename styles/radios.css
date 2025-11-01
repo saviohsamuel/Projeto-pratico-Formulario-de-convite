@@ -5,7 +5,7 @@
 .radio-wrapper {
     display: flex;
     align-items: center;        
-    padding: 10.5px 18px;
+    padding: .65625rem 1.125rem;
     img {
         width: 1rem;
     }
@@ -36,8 +36,8 @@
     gap: 0.4rem;
     border-radius: inherit;      
     & svg {
-      width: 16px;
-      height: 16px;
+      width: 1rem;
+      height: 1rem;
     }
 }
 input#presencial:checked + label svg path {
@@ -62,8 +62,8 @@ input#online:checked + label svg path {
     position: relative;
     label {
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
         border: 2px solid var(--shape-button);
         border-radius: 50%;
         &:hover {
@@ -72,8 +72,8 @@ input#online:checked + label svg path {
     }
     & span {
         display: inline-block;
-        width: 28px;
-        height: 28px;          
+        width: 1.75rem;
+        height: 1.75rem;          
         border-radius: 50%;
         position: absolute;        
         z-index: -1;        
@@ -125,23 +125,23 @@ input#online:checked + label svg path {
 .container-themes {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: .5rem;
 }
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--shape-button);
-    border-radius: 4px;
-    padding: 4px 4px 8px;
+    border-radius: .25rem;
+    padding: .25rem .25rem .5rem;
     border: 2px solid var(--input-stroke);
-    width: 134px;
+    width: 8.375rem;
     &:hover {
         background: var(--shape-hover);
     }
     span {
         font: var(--text-sm);
-        margin-top: 8px;
+        margin-top: .5rem;
     }
     & img {
         border-radius: inherit;
@@ -154,20 +154,20 @@ input#online:checked + label svg path {
     display: flex;    
     align-items: center;
     justify-content: space-between;
-    margin-top: 28px;
+    margin-top: 1.75rem;
 }
 .custom-file-label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
   cursor: pointer;
   color: #d1d5db;
-  margin-top: 12px;
+  margin-top: .75rem;
     & > figure {
         display: flex;
-        gap: 8px;
-        border-radius: 8px;
-        padding: 10.5px 12px;
+        gap: .5rem;
+        border-radius: .5rem;
+        padding: .65625rem .75rem;
         background: var(--shape-button);
         display: flex;
     }
@@ -183,52 +183,43 @@ input#online:checked + label svg path {
   flex-direction: column;
   color: var(--text-body, #E1E1E6);
 }
-
-.teste {
-    margin-top: 12px;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+.toggle-slider {
+    margin-top: .75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
 }
-
-/* Toggle base */
 .toggle-style {
   position: relative;
-  width: 64px;
-  height: 30px;
-  padding: 8px 58px 0 0;
+  width: 4rem;
+  height: 1.875rem;
+  padding: .5rem 3.625rem 0 0;
 }
-/* Fundo do toggle */
 .slider {
   position: absolute;
   inset: 0;
   background: var(--input-base, #1D1F23);
   border: 1px solid var(--input-stroke, #3C3F44);
-  border-radius: 34px;
+  border-radius: 2.125rem;
   cursor: pointer;
   transition: 0.3s;
 }
-
-/* Bolinha */
 .slider::before {
   content: "";
   position: absolute;
-  height: 24px;
-  width: 24px;
-  left: 2px;
-  bottom: 2px;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: .125rem;
+  bottom: .125rem;
   background-color: var(--input-stroke, #3C3F44);
   border-radius: 50%;
   transition: 0.3s;
 }
-
-/* Quando o toggle estiver ativo */
 .toggle-style input:checked + .slider {
   background: var(--brand-light);
   border-color: var(--brand-ligh);
 }
-
 .toggle-style input:checked + .slider::before {
-  transform: translateX(35px);
+  transform: translateX(2.1875rem);
   background: var(--text-heading, #E1E1E6);
 }
