@@ -13,7 +13,7 @@ O desafio consistia em criar um formulário com alguns campos personalizados par
 Praticar fundamentos como:
 - Criação de página apenas com scroll no formulário;
 - form estruturado para envio de dados;
-- estilização de inputs
+- estilização de inputs.
   
 ---
 
@@ -26,23 +26,22 @@ Praticar fundamentos como:
 
 ## 🖥️ Layout
 
-> ⚠️ Este projeto foi desenvolvido **apenas para desktop**.  
-> O foco do desafio é a prática de conceitos básicos de posicionamento e espaçamento, sem responsividade.
+> Responsivo;
+  > Desktop;
+  > Mobile.
 
 ---
 
 ## 🪄 Conceitos praticados
 
 - Form (method, action);
-- input (name, value)
-- radio
-- checkbox
-- label
+- input (name, value);
+- radio;
+- checkbox;
+- label;
 - e reforçar conceitos aprendidos anteriormente.
 
 ---
 
 ## 🖥️ Pré visualização do projeto
-
-<img width="1260" height="2021" alt="Group 1" src="https://github.com/user-attachments/assets/14fd5738-95c6-48e1-99d5-1130535873a2" />
-
+<img width="1200" height="627" alt="responsivo" src="https://github.com/user-attachments/assets/c30cd610-3cca-4409-842f-2a2af2d025e1" />
