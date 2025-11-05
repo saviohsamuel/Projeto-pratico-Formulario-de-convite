@@ -226,7 +226,8 @@ input#online:checked + label svg path {
 @media (max-width: 600px) {
     .container-themes {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);                        
+        grid-template-columns: repeat(2, 1fr);                        
+        padding-inline: 1rem;
     }        
     .wrapper-color {
         label {
@@ -240,7 +241,10 @@ input#online:checked + label svg path {
     }
     .card {
         padding: .15rem .15rem .5rem;
-
+        width: 100%;
+        & img {
+            width: 100%;
+        }
     }
     .customization-others {
         flex-direction: column;

@@ -55,3 +55,8 @@
     border: 1px solid var(--input-stroke);
     border-radius: .25rem;
 }
+@media (max-width: 600px) {
+    .img-check {
+        flex-shrink: 0;
+    }
+}
