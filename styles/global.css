@@ -83,3 +83,19 @@ h2 {
         font-weight: 100;
     }
 }
+@media (max-width: 600px) {
+    body {
+        overflow: initial;
+    }
+    #app {
+        grid-template-columns: 100%;
+        overflow: initial;
+    }
+    aside {
+        height: 90vh;
+        background-position: bottom;
+    }
+    main {
+        overflow-y: initial;
+    }    
+}

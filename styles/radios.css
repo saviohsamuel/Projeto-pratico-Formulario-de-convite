@@ -223,3 +223,30 @@ input#online:checked + label svg path {
   transform: translateX(2.1875rem);
   background: var(--text-heading, #E1E1E6);
 }
+@media (max-width: 600px) {
+    .container-themes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);                        
+    }        
+    .wrapper-color {
+        label {
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+        & span {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+    .card {
+        padding: .15rem .15rem .5rem;
+
+    }
+    .customization-others {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .style {
+        margin-bottom: 1rem;
+    }
+}
